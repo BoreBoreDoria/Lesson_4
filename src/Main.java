@@ -3,25 +3,29 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        boolean t = true;
-        boolean f = false;
 
-        int a = 5;
-        int b = 10;
-        int c = 5;
+        float a = 15;
+        float b = 6;
+        char symbol = '/';
 
-        if (a > b) {
+        calc(a, b, '+');
+        calc(a, b, '-');
+        calc(a, b, '/');
+        calc(a, b, '*');
+        calc(a, b, 'а');
+    }
 
-            System.out.println("Переменная а больше б");
-
-        } else if (a == b) {
-
-            System.out.println("А равно Б");
-
+    private static void calc(float a, float b, char symbol) {
+        if (symbol == '+') {
+            System.out.println("Сумма = " + (a + b));
+        } else if (symbol == '-') {
+            System.out.println("Разница = " + (a - b));
+        } else if (symbol == '*') {
+            System.out.println("Произедение = " + (a * b));
+        } else if (symbol == '/'){
+            System.out.println(a / b);
         } else {
-
-            System.out.println("Условие не верное");
-
+            System.out.println("Неверное выражение");
         }
     }
 }
