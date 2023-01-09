@@ -2,26 +2,17 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        int b = 5;
 
-        boolean t = true;
-        boolean f = false;
+        System.out.println(factorial(b));
+    }
 
-        int a = 5;
-        int b = 10;
-        int c = 5;
-
-        if (a > b) {
-
-            System.out.println("Переменная а больше б");
-
-        } else if (a == b) {
-
-            System.out.println("А равно Б");
-
-        } else {
-
-            System.out.println("Условие не верное");
-
+    public static int factorial(int n) {
+        int result = 1;
+        if (n == 1) {
+            return result;
         }
+        result = n * factorial(n - 1);
+        return result;
     }
 }
