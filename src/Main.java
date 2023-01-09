@@ -10,14 +10,18 @@ public class Main {
         int b = 10;
         int c = 5;
 
-        System.out.println(5 == 5);// Равенства
-        System.out.println(5 < 6); //Меньше
-        System.out.println(6 > 5); // Больше
-        System.out.println(5 <= 5); // Меньше или равно
-        System.out.println(7 >= 5); // Больше или равно
-        System.out.println(7 != 5); // Не равно
+        if (a > b) {
 
+            System.out.println("Переменная а больше б");
 
+        } else if (a == b) {
 
+            System.out.println("А равно Б");
+
+        } else {
+
+            System.out.println("Условие не верное");
+
+        }
     }
 }
